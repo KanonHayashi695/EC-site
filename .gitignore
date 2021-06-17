@@ -1,3 +1,4 @@
 /ShoppingSite/
-/bin
 /gen
+/bin
+.classpath
