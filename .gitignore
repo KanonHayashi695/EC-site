@@ -1,3 +1,5 @@
-/ShoppingSite/
 /bin
 /gen
+.classpath
+/component
+/aforce
