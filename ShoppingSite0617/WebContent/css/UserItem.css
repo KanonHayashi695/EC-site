@@ -1,9 +1,0 @@
-@charset "UTF-8";
-
-#column ul {
-	width: calc(100 + 20px);
-	margin: 0-10px;
-	display:flex;
-	flex-wrap: wrap;
-}
-
