@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+
+
+
+
+<!-- サーブレットのパラメータ -->
+
+<servlet>
+	<servlet-name>ItemListServlet</servlet-name>
+	<servlet-class>jp.co.aforce.servlets.ItemListServlet</servlet-class>
+
+	<init-param>
+		<param-name>message</param-name>
+		<param-value>servlet-init-param</param-value>
+	</init-param>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ItemListServlet</servlet-name>
+	<url-pattern>/servlets/ItemListServlet</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+	<servlet-name>Item</servlet-name>
+	<servlet-class>jp.co.aforce.servlets.Item</servlet-class>
+
+	<init-param>
+		<param-name>message</param-name>
+		<param-value>servlet-init-param</param-value>
+	</init-param>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Item</servlet-name>
+	<url-pattern>/servlets/Item</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+	<servlet-name>Regist</servlet-name>
+	<servlet-class>jp.co.aforce.servlets.RegistServlet</servlet-class>
+
+	<init-param>
+		<param-name>message</param-name>
+		<param-value>servlet-init-param</param-value>
+	</init-param>
+</servlet>
+<servlet-mapping>
+	<servlet-name>RegistServlet</servlet-name>
+	<url-pattern>/servlets/RegistServlet</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+	<servlet-name>Delete</servlet-name>
+	<servlet-class>jp.co.aforce.servlets.DelteServlet</servlet-class>
+
+	<init-param>
+		<param-name>message</param-name>
+		<param-value>servlet-init-param</param-value>
+	</init-param>
+</servlet>
+<servlet-mapping>
+	<servlet-name>DeleteServlet</servlet-name>
+	<url-pattern>/servlets/DeleteServlet</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+	<servlet-name>Administration</servlet-name>
+	<servlet-class>jp.co.aforce.servlets.AdministrationServlet</servlet-class>
+
+	<init-param>
+		<param-name>message</param-name>
+		<param-value>servlet-init-param</param-value>
+	</init-param>
+</servlet>
+<servlet-mapping>
+	<servlet-name>AdministrationServlet</servlet-name>
+	<url-pattern>/servlets/AdministrationServlet</url-pattern>
+</servlet-mapping>
+
+	
+</web-app>
