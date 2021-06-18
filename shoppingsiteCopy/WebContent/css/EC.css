@@ -1,9 +1,6 @@
 @charset "UTF-8";
 
-body{
-	background-color:#f9ead2;
-	padding-top:90px;
-}
+
 
 header{
 	width:100%;
@@ -17,6 +14,11 @@ header{
 
 }
 
+body{
+	background-color:#f9ead2;
+	padding-top:90px;
+}
+
 img{
 	display:inline-block;
 	padding:20px;
@@ -24,6 +26,11 @@ img{
 }
 
 h1{
+	color:#404b73;
+	text-align:center;
+}
+
+h2{
 	color:#404b73;
 	text-align:center;
 }

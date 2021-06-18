@@ -23,18 +23,14 @@ public class HeadphoneAction extends Action{
 		String keyword=request.getParameter("keyword");
 		if(keyword==null) keyword="";
 		
-		ShoppingProductDAO dao=new ShoppingProductDAO();
-		List<ShoppingProduct> listHeadphone=dao.search(keyword);
+		ShoppingProductDAO daos=new ShoppingProductDAO();
+		List<ShoppingProduct> listHeadphone=daos.search(keyword);
 		session.setAttribute("listHeadphone", listHeadphone);
 		
 		if(request.getParameter("Headphone").equals("Headphone")) {
-			List<ShoppingProduct> headphones=dao.getHeadphone();
+			List<ShoppingProduct> headphones=daos.getHeadphone();
 			request.setAttribute("shoppingHeadphone",headphones);
 		}
-		
-	
-
-		
 		return "HeadphoneList.jsp";
 	}
 

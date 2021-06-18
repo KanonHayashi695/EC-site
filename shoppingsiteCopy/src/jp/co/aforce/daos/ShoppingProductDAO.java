@@ -80,22 +80,22 @@ public class ShoppingProductDAO extends DAO {
 	public ArrayList<ShoppingProduct> getHeadphone(){
 		ArrayList<ShoppingProduct> listHeadphone=new ArrayList<>();
 		try {
-		Connection con=getConnection();
+		Connection cons=getConnection();
 		
-		PreparedStatement st=con.prepareStatement(
+		PreparedStatement str=cons.prepareStatement(
 				"select * from item where categoryId=1");
-		ResultSet rs=st.executeQuery();
+		ResultSet rsr=str.executeQuery();
 		
-		while(rs.next()) {
+		while(rsr.next()) {
 			ShoppingProduct spr=new ShoppingProduct();
-			spr.setId(rs.getInt("id"));
-			spr.setItemName(rs.getString("itemName"));
-			spr.setPrice(rs.getInt("price"));
-			spr.setCategoryId(rs.getInt("categoryId"));
+			spr.setId(rsr.getInt("id"));
+			spr.setItemName(rsr.getString("itemName"));
+			spr.setPrice(rsr.getInt("price"));
+			spr.setCategoryId(rsr.getInt("categoryId"));
 			listHeadphone.add(spr);
 		}
-		st.close();
-		con.close();
+		str.close();
+		cons.close();
 		}catch (Exception e) {
 			e.printStackTrace();
 		}

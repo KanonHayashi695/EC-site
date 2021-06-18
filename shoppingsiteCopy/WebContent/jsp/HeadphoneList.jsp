@@ -8,13 +8,13 @@
 <h1>Headphone</h1>
 
 <table style= "border-collapse:separate;border-spacing:10px">
-<!--<c:forEach var="shoppingHeadphone"  items="${listHeadphone}"> -->
+<c:forEach var="shoppingHeadphone"  items="${listHeadphone}">
 <tr>
 <td><img src="AdminImage/${shoppingHeadphone.id}.jpg" height="80"></td>
 <td>${shoppingHeadphone.itemName}</td>
 <td>￥${shoppingHeadphone.price}</td>
 </tr>
-<!--</c:forEach> -->
+</c:forEach>
 
 </table>
 

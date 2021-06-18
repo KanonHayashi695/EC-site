@@ -13,6 +13,7 @@ import jp.co.aforce.daos.ShoppingProductDAO;
 
 @WebServlet()
 
+
 public class HeadphoneAction extends Action{
 	public String execute(
 			HttpServletRequest request, HttpServletResponse response
@@ -31,10 +32,6 @@ public class HeadphoneAction extends Action{
 			List<ShoppingProduct> headphones=dao.getHeadphone();
 			request.setAttribute("shoppingHeadphone",headphones);
 		}
-		
-	
-
-		
 		return "HeadphoneList.jsp";
 	}
 
