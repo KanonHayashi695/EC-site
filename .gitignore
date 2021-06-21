@@ -1,3 +1,29 @@
-/bin
-/gen
+# Java
+*.class
+*.war
+*.ear
+
+# Eclipse
 .classpath
+.settings
+
+# Idea
+.idea
+*.iml
+*.iws
+*.ipr
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Build
+out
+build
+bin
+/bin
+
+# Other
+*.log
+*.swp
+*.bak
